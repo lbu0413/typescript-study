@@ -1,0 +1,33 @@
+Typescript was made by Microsoft in Oct, 2012
+- open-source language
+- any browser, any OS, anywhere Javascript runs
+- superset of Javascript
+
+JS = dynamically typed, prototype-based, class-like (ES6)
+TS = statically typed, class, interface, generics, types (OOP)
+
+
+TS -transcompiles-> JS
+    *TS babel*
+
+
+Why Typescript?
+1. Type (Safe)
+2. OOP (Object-Oriented-Programing)
+
+programming -> Compile Time -> Runtime
+
+- if type can be checked and decided during compile time, it is a statically typed programming language
+
+- dynamically typed (easy, flexible, fast but dangerous)
+    * no type at programming time and compile time
+    * bad readability 
+
+- OOP
+    * modern programming paradigm
+    * modularity, reusability, extensibility, maintainability
+    * productivity, higher-quality, faster
+
+
+npm install -g ts-node
+tsc nameOfFile.ts
