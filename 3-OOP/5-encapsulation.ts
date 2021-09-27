@@ -54,6 +54,42 @@
 	// maker.coffeeBeans = -34; // invalid
 
 	maker.fillCoffeeBeans(32);
+
+	class User {
+		// private firstName: string;
+		// private lastName: string;
+		// fullName: string;
+		get fullName(): string {
+			return `${this.firstName} ${this.lastName}`;
+		}
+		private internalAge = 4;
+
+		get age(): number {
+			return this.internalAge;
+		}
+
+		set age(num: number) {
+			if (num < 0) {
+				throw new Error("you are older than that");
+			}
+			this.internalAge = num;
+		}
+
+		constructor(private firstName: string, private lastName: string) {
+			// this.firstName = firstName;
+			// this.lastName = lastName;
+			// this.fullName = `${firstName} ${lastName}`;
+		}
+	}
+
+	const user = new User("Steve", "Jobs");
+	console.log(user.fullName);
+	// 이름변경
+	// user.firstName = "Wook";
+	// 여전히 Steve Jobs가 출력된다.
+	console.log(user.fullName);
+	user.age = 6;
+	console.log(user.age);
 }
 
 // encapsulation
